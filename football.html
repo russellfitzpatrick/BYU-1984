@@ -1,123 +1,150 @@
-<html>
+<!DOCTYPE html>
 
 <head>
-<title>BYU Football 1984</title>
+	<title>BYU Football 1984</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
 </head>
 
 <body>
-<h1>BYU Football 1984</h1>
+<div class="container">
+	<div class="blog-header">
+		<h1>BYU Football 1984 <small>National Champions</small></h1>
+	</div>
+	<div class="inner cover">
+		<div class="table-responsive">
+			<table class="table">
+				<tr>
+					<th>Date</th>
+					<th>Opponent</th>
+					<th>Top 25 Ranking</th>
+					<th>Game Location</th>
+					<th>Result</th>
+					<th>Highlights</th>
 
-<table>
-	<tr>
-		<th>Date</th>
-		<th>Opponent</th>
-		<th>Top 25 Ranking</th>
-		<th>Game Location</th>
-		<th>Result</th>
-		<th>Highlights</th>
-	</tr>
-	<tr>
-		<td>September 1</td>
-		<td>#3 Pittsburgh</td>
-		<td>N/A</td>
-		<td>Pitt Stadium, Pittsburgh</td>
-		<td>W 20-14</td>
-		<td><button id="pitt">Click for Highlights</button></td>
-	</tr>
-	<tr>
-		<td>September 8</td>
-		<td>Baylor</td>
-		<td>#13</td>
-		<td>Cougar Stadium, Provo</td>
-		<td>W 47-13</td>
-	</tr>
-	<tr>
-		<td>September 15</td>
-		<td>Tulsa</td>
-		<td>#8</td>
-		<td>Cougar Stadium, Provo</td>
-		<td>W 38-15</td>
-	</tr>
-	<tr>
-		<td>September 22</td>
-		<td>Hawaii</td>
-		<td>#6</td>
-		<td>Aloha Stadium, Honolulu</td>
-		<td>W 18-13</td>
-		<td><button id="hawaii">Click for Highlights</button></td>
+				</tr>
+				<tr>
+					<td>September 1</td>
+					<td>#3 Pittsburgh</td>
+					<td>N/A</td>
+					<td>Pitt Stadium, Pittsburgh</td>
+					<td>W 20-14</td>
+					<td><button id="pitt" type="button" class="btn btn-default" onclick=changeVid(id)>Click for Highlights</button></td>
+				</tr>
+				<tr>
+					<td>September 8</td>
+					<td>Baylor</td>
+					<td>#13</td>
+					<td>Cougar Stadium, Provo</td>
+					<td>W 47-13</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>September 15</td>
+					<td>Tulsa</td>
+					<td>#8</td>
+					<td>Cougar Stadium, Provo</td>
+					<td>W 38-15</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>September 22</td>
+					<td>Hawaii</td>
+					<td>#6</td>
+					<td>Aloha Stadium, Honolulu</td>
+					<td>W 18-13</td>
+					<td><button id="hawaii" type="button" class="btn btn-default" onclick=changeVid(id)>Click for Highlights</button></td>
 
-	</tr>
-	<tr>
-		<td>October 6</td>
-		<td>Colorado State</td>
-		<td>#8</td>
-		<td>Hughes Stadium, Fort Collins</td>
-		<td>W 52-9</td>
-	</tr>
-	<tr>
-		<td>October 13</td>
-		<td>Wyoming</td>
-		<td>$7</td>
-		<td>Cougar Stadium, Provo</td>
-		<td>W 41-38</td>
-	</tr>
-	<tr>
-		<td>October 20</td>
-		<td>Air Force</td>
-		<td>#7</td>
-		<td>Falcon Stadium, Colorado Springs</td>
-		<td>W 30-25</td>
-	</tr>
-	<tr>
-		<td>October 25</td>
-		<td>New Mexico</td>
-		<td>#5</td>
-		<td>University Stadium, Albuquerque</td>
-		<td>W 48-0</td>
-	</tr>
-	<tr>
-		<td>November 3</td>
-		<td>UTEP</td>
-		<td>#4</td>
-		<td>Cougar Stadium, Provo</td>
-		<td>W 42-9</td>
-	</tr>
-	<tr>
-		<td>November 10</td>
-		<td>San Diego State</td>
-		<td>#4</td>
-		<td>Cougar Stadium, Provo</td>
-		<td>W 34-3</td>
-	</tr>
-	<tr>
-		<td>November 17</td>
-		<td>Utah</td>
-		<td>#3</td>
-		<td>Rice Stadium, Salt Lake City</td>
-		<td>W 24-14</td>
-		<td><button id="utah">Click for Highlights</button></td>
+				</tr>
+				<tr>
+					<td>October 6</td>
+					<td>Colorado State</td>
+					<td>#8</td>
+					<td>Hughes Stadium, Fort Collins</td>
+					<td>W 52-9</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>October 13</td>
+					<td>Wyoming</td>
+					<td>#7</td>
+					<td>Cougar Stadium, Provo</td>
+					<td>W 41-38</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>October 20</td>
+					<td>Air Force</td>
+					<td>#7</td>
+					<td>Falcon Stadium, Colorado Springs</td>
+					<td>W 30-25</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>October 25</td>
+					<td>New Mexico</td>
+					<td>#5</td>
+					<td>University Stadium, Albuquerque</td>
+					<td>W 48-0</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>November 3</td>
+					<td>UTEP</td>
+					<td>#4</td>
+					<td>Cougar Stadium, Provo</td>
+					<td>W 42-9</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>November 10</td>
+					<td>San Diego State</td>
+					<td>#4</td>
+					<td>Cougar Stadium, Provo</td>
+					<td>W 34-3</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>November 17</td>
+					<td>Utah</td>
+					<td>#3</td>
+					<td>Rice Stadium, Salt Lake City</td>
+					<td>W 24-14</td>
+					<td><button id="utah" type="button" class="btn btn-default" onclick=changeVid(id)>Click for Highlights</button></td>
 
-	</tr>
-	<tr>
-		<td>November 24</td>
-		<td>Utah State</td>
-		<td>#1</td>
-		<td>Cougar Stadium, Provo</td>
-		<td>W 38-13</td>
-	</tr>
-	<tr>
-		<td>December 21</td>
-		<td>Michigan</td>
-		<td>#1</td>
-		<td>Jack Murphy Stadium, San Diego (Holiday Bowl)</td>
-		<td>W 24-17</td>
-		<td><button id="michigan">Click for Highlights</button></td>
+				</tr>
+				<tr>
+					<td>November 24</td>
+					<td>Utah State</td>
+					<td>#1</td>
+					<td>Cougar Stadium, Provo</td>
+					<td>W 38-13</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>December 21</td>
+					<td>Michigan</td>
+					<td>#1</td>
+					<td>Jack Murphy Stadium, San Diego (Holiday Bowl)</td>
+					<td>W 24-17</td>
+					<td><button id="michigan" type="button" class="btn btn-default" onclick=changeVid(id)>Click for Highlights</button></td>
 
-	</tr>
-</table>
+				</tr>
+			</table>
+		</div>
 
-<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/I-DQ9imNjG4" frameborder="0" allowfullscreen></iframe>
-<body>
+		<div class="vertical-center">
+			<div class="container">
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/I-DQ9imNjG4" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
 
 
 </html>
